@@ -1,0 +1,88 @@
+
+body{
+    display: flex;
+    background-color: rgb(20, 20, 41);
+    height: auto;
+    color: aliceblue;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(20, 20, 41);
+    height: 24cm;
+    width: 100%;
+    color: aliceblue;
+}
+.topframe{
+    display: flex;
+    background-color: rgb(197, 108, 108);
+    height: 500px;
+    width: 100%;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.helpframe{
+    display: flex;
+    height: auto;
+    width: auto;
+    margin-top: -80px;
+
+}
+
+.picture{
+    height: 20px;
+}
+.logoimage{
+    display: flex;
+    width: auto;
+    height: 500px;
+}
+.helpbutton{
+    display: flex;
+    background-color: rgb(197, 130, 5);
+    height: 90px;
+    width: 100%;
+}
+.answerframe{
+    display: flex;
+    height: 90px;
+    width: 30cm;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.answers{
+    display: flex;
+    background-color: rgb(197, 130, 5);
+    height: 60px;
+    width: 12cm;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 35px;
+    font-size: 40px;
+    margin-bottom: 30px;
+
+}
+.prizes{
+    display: flex;
+    background-color: rgb(197, 130, 5);
+    height: 27px;
+    width: 3cm;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 35px;
+    font-size: 28px;
+}
+.question{
+    font-size: 34px;
+}
+.start{
+    color: aliceblue;
+}

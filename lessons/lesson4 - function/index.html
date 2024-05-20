@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+        <title>lesson 4</title>
+    </head>
+    <body>
+        <h1>Lesson 4</h1>
+
+        <div class="frame">
+
+            <div class="task">
+                <button onclick="plus()">+</button>
+                <span id="count">1</span>
+                <button onclick="minus()">-</button>
+            </div>
+
+            <div class="task">
+                <h2>מה העיר הכי שווה?</h2>
+
+                <select id="city" oninput="cityChange()">
+                    <option value="" disabled selected>בחר...</option>
+                    <option value="7400">נתניה</option>
+                    <option value="4000">קרית חיים</option>
+                    <option value="4000">חיפה</option>
+                    <option value="322">בית הלל</option>
+                    <option value="246">נתיבות</option>
+                    <option value="696">כפר חב"ד</option>
+                    <option value="3611">קרית ארבע</option>
+                    <option value="689">מגדים</option>
+                    <option value="6500">חדרה</option>
+                    <option value="502">ירכא</option>
+                    <option value="1200">מודיעין</option>
+                    <option value="999">הוד השרון</option>
+                </select>
+
+                <span id="output1"></span>
+            </div>
+
+            <div class="task">
+                <h2>יש לקלוט שם משתמש (banana) וסיסמה (a123), ולכתוב הודעה בהתאם</h2>
+
+                <input type="text" id="username" placeholder="שם משתמש">
+                <input type="password" id="password" placeholder="סיסמה">
+                <button onclick="login()">התחברות</button>
+                <p id="output2"></p>
+            </div>
+
+            <div class="task">
+                <h2>
+                    יש לקלוט מספר:
+                    <ul>
+                        <li>אם הוא קטן מ-40 (כולל) - לצבוע את תיבת הקלט באדום</li>
+                        <li>אם הוא בין 41 ל-60 (כולל) - לצבוע את תיבת הקלט בכתום</li>
+                        <li>אם הוא בין 61 ל-80 (כולל) - לצבוע את תיבת הקלט בכחול</li>
+                        <li>אם הוא בין 81 ל-100 (כולל) - לצבוע את תיבת הקלט בירוק</li>
+                    </ul>
+                </h2>
+
+                <input type="number" id="grade" oninput="color()">
+            </div>
+
+            <div class="task">
+                <h2>יש לקלוט 2 ערכים ובלחיצת כפתור להחליף ביניהם</h2>
+
+                <input type="text" id="str1">
+                <input type="text" id="str2">
+                <button onclick="replace()">החלף</button>
+            </div>
+
+            <div class="task">
+                <p>בעל בית תוכנה החליט להעלות את המשכורת של כל תוכניתן ב-10%, בתנאי <b>שלאחר העלאה כזו</b> הסכום לא יהיה יותר גבוה מ-6,000 ש"ח.</p>
+                <p>אם הסכום אכן יהיה גבוה מ-6,000 ש"ח - יקבל אותו תוכניתן העלאה של 5% בלבד.</p>
+                <p>קלוט את שמו של התוכניתן ואת משכורתו הנוכחית. הצג את משכורתו של התוכניתן לאחר העלאה.</p>
+                <input type="text" id="user" placeholder="שם העובד">
+                <input type="number" id="salary" placeholder="שכר">
+                <button onclick="salarycalcultor()">חשב</button>
+                <p id="output3"></p>
+            </div>
+
+            <div class="task">
+                <p>במכבי תל אביב מחפשים שחקנים חדשים.</p>
+                <p>תנאי הקבלה: גיל בין 14 ל-18 או בין 21 ל-26.</p>
+                <p>כמו כן, גובה השחקן חייב להיות מעל 182 ס"מ.</p>
+                <p>כתוב תכנית הקולטת את הפרטים.</p>
+                <input type="number" id="age" placeholder="גיל">
+                <input type="number" id="height" placeholder="גובה">
+                <button onclick="check()">בדוק</button>
+                <p id="output4"></p>
+            </div>
+        </div>
+    </body>
+</html>
